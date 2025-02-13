@@ -1,17 +1,41 @@
-Esse documento contém, todas as funcionalidade simples de um sistema PHP, alguns deles contam com:
+<strong> Sistema de Gerenciamento em PHP <strong>
+Este é um sistema simples desenvolvido em PHP que permite cadastro de usuários, gerenciamento de vendas e registro de logins e logouts.
+<br>
+Funcionalidades:
+Cadastro de Usuários
+Login e Logout
+Registro de Logs (Login, Logout e Vendas)
 
-Sistema de:
-VENDA
-LOG
-CADASTRO DE USUÁRIOS
-LOG OUT
+Sistema de Vendas
+Segurança
+Este sistema não possui criptografia avançada. O armazenamento das credenciais é feito de forma simples, sendo recomendado aprimoramentos para uso em ambientes de produção.
 
-O sistema <strong>não<strong tem uma criptografia avançada e robusta para proteger seus dados apenas para inserir um usuário, e testar seu funcionamento.
-Já vem um usuário padrão setado, como admin. (Login: admin | Senha: admin).
+Acesso ao Sistema
 
-É necessário para você iniciar o sistema e conseguir utiliza-lo, inserir o login como admin.
-Com o login realizado você terá acesso as funcionalidades do sistema, já listados acima.
+Usuário padrão configurado para testes:
 
-|Função de venda|
-Na função de venda é possível, você inserir o valor e o nome do produto.
-Ao final de inserção do produto você terá uma mensagem mostrando o que foi inserido. 
+Login: admin
+
+Senha: admin
+
+Após login, as funcionalidades do sistema estarão disponíveis.
+
+Funcionalidade de Venda
+
+O sistema permite:
+
+Inserir o nome do produto.
+
+Definir o valor da venda.
+
+Registrar automaticamente a venda no histórico, incluindo data e hora.
+
+Histórico de Registros
+
+O sistema mantém logs com:
+
+Usuários cadastrados
+
+Histórico de logins e logouts com data e hora
+
+Histórico de vendas
