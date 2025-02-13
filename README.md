@@ -1,4 +1,4 @@
-<strong> Sistema de Gerenciamento em PHP <strong>
+<strong> Sistema de Gerenciamento em PHP </strong>
 Este é um sistema simples desenvolvido em PHP que permite cadastro de usuários, gerenciamento de vendas e registro de logins e logouts.
 <br>
 Funcionalidades:
