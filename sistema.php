@@ -168,7 +168,7 @@ function escolha(){
 }
 
 
-//IDENTIFICAR SE ESTA LOGAD OU NAO, ATRAVES DA VARIAVEL $USER_LOGADO COMO TRUE.
+//IDENTIFICAR SE ESTA LOGADO OU NAO, ATRAVES DA VARIAVEL $USER_LOGADO COMO TRUE.
 while (true){
     if ($user_logado){
         escolha();
