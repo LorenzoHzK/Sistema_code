@@ -9,7 +9,7 @@ $arr_vendas = [];
 $valor_total = 0;
 
 
-
+//FUNCAO PARA CADASTRAR O USUARIO
 function cad_user(){
     global $arr, $user_logado, $data_loggin, $usuario_atual;
     
@@ -31,7 +31,7 @@ function cad_user(){
     $data_loggin[$usuario_atual][] = date('d/m/Y H:i:s');
 }
 
-
+//FUNCAO PARA DELSOGAR O USUARIO
 function deslogar(){
     global $user_logado, $usuario_atual, $data_deslogue;
 
@@ -46,7 +46,7 @@ function deslogar(){
     $usuario_atual = "";
 }
 
-
+//FUNCAO PARA VERIFICACAO DO USUARIO
 function verifi_user(){
     global $arr, $user_logado, $usuario_atual, $data_loggin;
 
@@ -65,7 +65,7 @@ function verifi_user(){
     echo "Login incorreto \n";
 }
 
-
+//FUNCAO PARA VENDA DOS PRODUTOS
 function venda(){
     global $arr_vendas, $usuario_atual, $valor_total;
 
@@ -89,7 +89,7 @@ function venda(){
     voltar();
 }
 
-
+//FUNCAO PARA O LOG DO QUE FOI FEITO, NELE E POSSIVEL, VERIFICAR O HISTRICO DE LGOGIN E LOGOUT, VENDAS E USUARIOS CADASTRADOS.
 function logg(){
     global $arr_vendas, $arr, $data_loggin, $data_deslogue;
 
@@ -117,13 +117,13 @@ function logg(){
 }
 
 
-//função para limpar o screen do PHP
+//FUNCAO PARA LIMPAR A SCREEN DO TERMINAL
 function cls()                                                                                                             
     {
         print("\033[2J\033[;H");
     }
 
-//função para voltar 
+//FUNCAO PARA VOLTRAR AO MENU
 function voltar(){
     $volta = readline("1 -- Voltar ao menu: \n");
     cls();
@@ -136,6 +136,7 @@ function voltar(){
     }
 }
 
+//FUNCAO PARA ESCOLHER O QUE DEVE SER SEGUIDO
 function escolha(){
     global $user_logado, $valor_total, $usuario_atual;
 
@@ -166,6 +167,8 @@ function escolha(){
     }
 }
 
+
+//IDENTIFICAR SE ESTA LOGAD OU NAO, ATRAVES DA VARIAVEL $USER_LOGADO COMO TRUE.
 while (true){
     if ($user_logado){
         escolha();
