@@ -89,7 +89,7 @@ function venda(){
     voltar();
 }
 
-//FUNCAO PARA O LOG DO QUE FOI FEITO, NELE E POSSIVEL, VERIFICAR O HISTRICO DE LGOGIN E LOGOUT, VENDAS E USUARIOS CADASTRADOS.
+//FUNCAO PARA O LOG DO QUE FOI REALIZADO NO SISTEMA, NELE É POSSIVEL, VERIFICAR O HISTORICO DE LGOGIN E LOGOUT, VENDAS E USUARIOS CADASTRADOS.
 function logg(){
     global $arr_vendas, $arr, $data_loggin, $data_deslogue;
 
@@ -99,20 +99,25 @@ function logg(){
     echo "|Histórico de logins|\n";
     foreach ($data_loggin as $usuario => $logins) {
         foreach ($logins as $b) {
-            echo "O usuário $usuario fez login em $b \n\n";
+            echo "***************************************************************************************\n";
+            echo "O usuário $usuario fez login em $b \n";
+            echo "***************************************************************************************\n";
         }
     }
 
     echo "|Histórico de logouts|\n";
     foreach ($data_deslogue as $usuario => $deslogues) {
         foreach ($deslogues as $a) {
+            echo "***************************************************************************************\n";
             echo "O usuário $usuario deslogou em $a \n\n";
+            echo "***************************************************************************************\n";
         }
     }
 
     echo "|Histórico de vendas|\n";
     foreach ($arr_vendas as $venda) {
-        echo "$venda \n\n";
+        echo "***************************************************************************************\n";
+        echo "$venda \n";
     }
 }
 
